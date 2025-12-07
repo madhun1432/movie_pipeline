@@ -82,6 +82,13 @@ python etl.py
 You will see:
 **Done**
 
+**Design Choices**
+
+	•	SQLite is used for simplicity.
+	•	Movie titles cleaned and extracted only the name and year.
+	•	API errors handled using values.
+	•	ETL script is idempotent (old records are removed before by inserting new ones).
+  
 **SQL Queries**
 1. Which movie has the highest average rating?
 
@@ -160,6 +167,7 @@ If names are different (MovieID, moviesId, movieId), the ETL fails.
 This project helped me understand how raw data can be cleaned, enriched, and transformed into meaningful insights.
 
 It gave me hands-on experience with building a real ETL pipeline from start to finish.
+
 
 
 
